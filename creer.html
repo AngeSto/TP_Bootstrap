@@ -40,7 +40,7 @@
         <div class="col-3">
             <div class="form-check mb-2 mb-md-0">
                 <label class="form-check-label">
-                    <input class="form-check-input" type="checkbox"> Désactivé
+                    <label class="form-check-input" type="checkbox"> Désactivé
                 </label>
             </div>
         </div>
@@ -79,6 +79,7 @@
                                     <label for="inputNom" class="col-3 col-form-label text-right">Nom</label>
                                     <div class="col-5">
                                         <input type="text" class="form-control" id="inputNom" value="Jean"placeholder="Nom" required>
+                                        <div class="invalid-feedback">Le nom est obligatoire</div>
                                     </div>
                                 </div>
                                 <div class="form-group row">
@@ -179,7 +180,7 @@
     </section>
     <section class="row">
         <div class="offset-9">
-            <a class="btn btn-primary" href="./nouveau.html" role="button">Sauvegarder</a>
+                <button type="submit" class="btn btn-primary" id="btnSauvegarder">Sauvegarder</button>
         </div>
     </section>
 </body>
